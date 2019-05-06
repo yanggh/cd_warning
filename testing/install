@@ -1,0 +1,7 @@
+g++  Conf_test.cpp   ../src/Conf.cpp -std=c++11 -I ../include/ -o ../bin/Conf_test
+g++  Iscs_test.cpp   ../src/Iscs.cpp  ../src/Conf.cpp ../src/DataSql.cpp  -lmodbus -lmysqlclient -I../include  -I /usr/include/mysql/   -I /usr/local/include/modbus/  -L /usr/local/lib/ -std=c++11 -o ../bin/Iscs_test
+g++  Nodes_test.cpp ../src/Node.cpp  ../src/Nodes.cpp  ../src/Conf.cpp ../src/DataSql.cpp -lmysqlclient -std=c++11 -I ../include/  -I /usr/include/mysql/  -L /usr/local/lib/  -o ../bin/Nodes_test
+g++  Node_test.cpp  ../src/Node.cpp -I ../include/ -std=c++11 -o ../bin/Node_test
+g++  Zmq_test.cpp   ../src/Zmq.cpp  ../src/Conf.cpp  -lzmq -std=c++11  -D__TEST__  -I ../include/ -o  ../bin/Zmq_test
+g++  Zmq_test.cpp   ../src/UdpDeal.cpp  ../src/Socket.cpp ../src/DataSql.cpp ../src/Node.cpp ../src/Nodes.cpp  ../src/Zmq.cpp  ../src/Conf.cpp  -lzmq -std=c++11 -lmysqlclient   -I /usr/include/mysql/ -I ../include/ -D__TEST__  -D__UDPDEAL_  -o ../bin/Zmq_Udp_test
+g++  UdpDeal_test.cpp  ../src/Conf.cpp ../src/DataSql.cpp ../src/Node.cpp ../src/Nodes.cpp   ../src/UdpDeal.cpp ../src/Socket.cpp  -std=c++11 -lmysqlclient -I ../include/  -I /usr/include/mysql/  -o ../bin/UdpDeal_test

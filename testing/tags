@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAXFILE	MyConf_test.cpp	/^static const  int  MAXFILE = 65535;$/;"	v	file:
+dameno	MyConf_test.cpp	/^void dameno()$/;"	f
+main	MyConf_test.cpp	/^int main()$/;"	f
+main	MyIscs_test.cpp	/^int main(int argc, char** argv)$/;"	f
+main	MyNode_test.cpp	/^int main()$/;"	f
+main	MyNodes_test.cpp	/^int main(int argc, char** argv)$/;"	f
+main	MySong_test.cpp	/^int main()$/;"	f
+main	MyUdpDeal_test.cpp	/^int main(int argc, char** argv)$/;"	f
+main	MyZmq_test.cpp	/^int main(int argc, char**argv)$/;"	f
+myqueue	MyNodes_test.cpp	/^MyQueue<std::string> myqueue;$/;"	v
+myqueue	MyUdpDeal_test.cpp	/^MyQueue<std::string> myqueue;$/;"	v

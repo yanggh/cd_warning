@@ -1,0 +1,92 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+HW_ZX_H	hwzx.h	2;"	d
+Lock	Common.h	/^    Lock()$/;"	f	class:Lock
+Lock	Common.h	/^class Lock$/;"	c
+ModSelect1	Iscs.h	/^    void  ModSelect1()$/;"	f	class:MyIscs
+ModSelect2	Iscs.h	/^    void  ModSelect2()$/;"	f	class:MyIscs
+MyConf	Conf.h	/^class MyConf{$/;"	c
+MyDataSql	DataSql.h	/^class MyDataSql{$/;"	c
+MyIscs	Iscs.h	/^class MyIscs: public MyDataSql$/;"	c
+MyModBus	Iscs.h	/^class MyModBus{$/;"	c
+MyNodes	Nodes.h	/^class MyNodes: public MyDataSql$/;"	c
+MyQueue	Queue.h	/^    MyQueue(){}$/;"	f	class:MyQueue
+MyQueue	Queue.h	/^    MyQueue(MyQueue const& other)$/;"	f	class:MyQueue
+MyQueue	Queue.h	/^class MyQueue{$/;"	c
+MySnmp	RecvSnmp.h	/^class MySnmp$/;"	c
+MySocket	Socket.h	/^class MySocket{$/;"	c
+Node	Node.h	/^class Node$/;"	c
+_MY_ZMQ_H	Zmq.h	2;"	d
+_MyDataSql_H	DataSql.h	2;"	d
+_MyIscs_H	Iscs.h	2;"	d
+_MyNode_H	Node.h	2;"	d
+_MyNodes_H	Nodes.h	2;"	d
+_MyQueue_H	Queue.h	2;"	d
+_MyRecvSnmp_H	RecvSnmp.h	2;"	d
+_MySocket_H	Socket.h	2;"	d
+_MyTrapCallBack_H	TrapCallBack.h	2;"	d
+_My_SNMP_H	Snmp.h	2;"	d
+__COMMON__	Common.h	2;"	d
+__CONF__H	Conf.h	2;"	d
+__MySong_H	Song.h	2;"	d
+__MyUdpDeal_	UdpDeal.h	2;"	d
+_commit	Conf.h	/^    string  _commit;$/;"	m	class:MyConf
+_database	Conf.h	/^    string  _database;$/;"	m	class:MyConf
+_dir	Conf.h	/^    string  _dir;$/;"	m	class:MyConf
+_ip	Node.h	/^    std::string _ip;$/;"	m	class:Node
+_ip	Socket.h	/^    std::string      _ip;$/;"	m	class:MySocket
+_keepalive	Conf.h	/^    int    _keepalive;$/;"	m	class:MyConf
+_modbus_major_ip	Conf.h	/^    string  _modbus_major_ip;$/;"	m	class:MyConf
+_modbus_major_port	Conf.h	/^    int     _modbus_major_port;$/;"	m	class:MyConf
+_modbus_min_ip	Conf.h	/^    string  _modbus_min_ip;$/;"	m	class:MyConf
+_modbus_min_port	Conf.h	/^    int     _modbus_min_port;$/;"	m	class:MyConf
+_mysql_ip	Conf.h	/^    string  _mysql_ip;$/;"	m	class:MyConf
+_password	Conf.h	/^    string  _password;$/;"	m	class:MyConf
+_port	Node.h	/^    uint16_t _port;$/;"	m	class:Node
+_port	Socket.h	/^    int              _port;$/;"	m	class:MySocket
+_pub_port	Conf.h	/^    int     _pub_port;$/;"	m	class:MyConf
+_sin	Node.h	/^    struct sockaddr_in _sin;$/;"	m	class:Node	typeref:struct:Node::sockaddr_in
+_sip	Conf.h	/^    string  _sip;$/;"	m	class:MyConf
+_sound_ip	Conf.h	/^    string  _sound_ip;$/;"	m	class:MyConf
+_sound_port	Conf.h	/^    int     _sound_port;$/;"	m	class:MyConf
+_sport	Conf.h	/^    int     _sport;$/;"	m	class:MyConf
+_sql1	Iscs.h	/^    std::string _sql1;$/;"	m	class:MyIscs
+_sql2	Iscs.h	/^    std::string _sql2;$/;"	m	class:MyIscs
+_ssys	Node.h	/^    uint8_t _ssys;$/;"	m	class:Node
+_stop	Node.h	/^    uint8_t _stop;$/;"	m	class:Node
+_sub	Iscs.h	/^    int  _sub;$/;"	m	class:MyIscs
+_timeout	Nodes.h	/^    int                 _timeout;$/;"	m	class:MyNodes
+_trap_port	Conf.h	/^    int     _trap_port;$/;"	m	class:MyConf
+_update_ip	Conf.h	/^    string  _update_ip;$/;"	m	class:MyConf
+_update_port	Conf.h	/^    int     _update_port;$/;"	m	class:MyConf
+_username	Conf.h	/^    string  _username; $/;"	m	class:MyConf
+_web_ip	Conf.h	/^    string  _web_ip;$/;"	m	class:MyConf
+_web_port	Conf.h	/^    int     _web_port;$/;"	m	class:MyConf
+codemap	Conf.h	/^    map<string, int> codemap;$/;"	m	class:MyConf
+data_cond	Queue.h	/^    std::condition_variable data_cond;$/;"	m	class:MyQueue
+datasql	Iscs.h	/^    MyDataSql  datasql;$/;"	m	class:MyIscs
+datasql	Nodes.h	/^    MyDataSql           datasql;$/;"	m	class:MyNodes
+empty	Queue.h	/^    bool empty() const$/;"	f	class:MyQueue
+ipmap	Conf.h	/^    map<string, int> ipmap;$/;"	m	class:MyConf
+mtx	Common.h	/^    std::mutex mtx;$/;"	m	class:Lock
+mtx	Queue.h	/^    std::mutex   mtx;$/;"	m	class:MyQueue
+my_res	DataSql.h	/^    MYSQL_RES *my_res;$/;"	m	class:MyDataSql
+mysql	DataSql.h	/^    MYSQL     *mysql;$/;"	m	class:MyDataSql
+nms	Nodes.h	/^    std::vector<Node>   nms;$/;"	m	class:MyNodes
+push_data	Queue.h	/^    void push_data(const T ss)$/;"	f	class:MyQueue
+qdata	Queue.h	/^    std::queue<T>  qdata;$/;"	m	class:MyQueue
+qsdata	Socket.h	/^    std::queue<std::pair<struct sockaddr_in, std::string>> qsdata;$/;"	m	class:MySocket
+query	Iscs.h	/^    uint8_t query[MODBUS_TCP_MAX_ADU_LENGTH];$/;"	m	class:MyModBus
+row	DataSql.h	/^    MYSQL_ROW row;$/;"	m	class:MyDataSql
+server_socket	Iscs.h	/^    int     server_socket;$/;"	m	class:MyModBus
+size	Queue.h	/^    size_t  size()$/;"	f	class:MyQueue
+try_pop	Queue.h	/^    bool try_pop(T& value)$/;"	f	class:MyQueue
+try_pop	Queue.h	/^    std::shared_ptr<T> try_pop()$/;"	f	class:MyQueue
+wait_and_pop	Queue.h	/^    std::shared_ptr<T> wait_and_pop()$/;"	f	class:MyQueue
+wait_and_pop	Queue.h	/^    void wait_and_pop(T& value)$/;"	f	class:MyQueue
+~Lock	Common.h	/^    ~Lock()$/;"	f	class:Lock
+~MyQueue	Queue.h	/^    ~MyQueue(){$/;"	f	class:MyQueue

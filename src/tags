@@ -1,0 +1,164 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CONNECT	Nodes.cpp	/^static const bool  CONNECT = true;$/;"	v	file:
+ConsumerTask	Zmq.cpp	/^int ConsumerTask()$/;"	f
+DATABASE	Conf.cpp	/^const char* DATABASE   = "database";$/;"	v
+DDeComp	UdpDeal.cpp	/^std::string  DDeComp(const std::string data, std::string& result)$/;"	f
+DISCON	Nodes.cpp	/^static const bool  DISCON = false;$/;"	v	file:
+DataHandle	Iscs.cpp	/^void MyIscs::DataHandle(MYSQL_ROW row)$/;"	f	class:MyIscs
+DataHandle	Nodes.cpp	/^void MyNodes::DataHandle(MYSQL_ROW row)$/;"	f	class:MyNodes
+Deal	Song.cpp	/^void Deal(const std::string& recvdata)$/;"	f
+DealData	UdpDeal.cpp	/^bool DealData(MySocket& socket)$/;"	f
+DealPubData	Song.cpp	/^void DealPubData()$/;"	f
+GetSqlRes	DataSql.cpp	/^void MyDataSql::GetSqlRes(const std::string sql)$/;"	f	class:MyDataSql
+HardWare	Song.cpp	/^int  HardWare(const uint8_t *RGB_SO, const uint8_t *RGB_SC, const uint8_t *RGB_O, const uint8_t *RGB_C)$/;"	f
+HeartBeat	Nodes.cpp	/^void  MyNodes::HeartBeat(const string& ip, const uint16_t& port)$/;"	f	class:MyNodes
+INNERIP	Conf.cpp	/^const char* INNERIP    = "inner-ip";$/;"	v
+IPBUS	Conf.cpp	/^const string IPBUS = "\/usr\/local\/warning\/etc\/ip_addr";$/;"	v
+IPSUB	Nodes.cpp	/^static const int   IPSUB = 1;$/;"	v	file:
+Iscs_Deal	Iscs.cpp	/^int  Iscs_Deal()$/;"	f
+Iscs_Work	Iscs.cpp	/^void  MyIscs::Iscs_Work(const std::string ip1, const int port1, const std::string ip2, const int port2)$/;"	f	class:MyIscs
+KEEPALIVE	Conf.cpp	/^const char* KEEPALIVE  = "keepalive";$/;"	v
+KEEP_ALIVE_STR	Nodes.cpp	/^const char* KEEP_ALIVE_STR = "{ \\"type\\": \\"0xFFFF\\", \\"fnum\\": \\"0\\", \\"flen\\": \\"0\\", \\"son_sys\\": \\"%d\\", \\"stop\\": \\"%d\\", \\"eng\\": \\"0\\", \\"node\\":\\"0\\", \\"bug\\": \\"0\\", \\"time\\": \\"0\\", \\"res1\\": \\"%s\\", \\"res2\\": \\"%d\\", \\"res3\\": \\"%d\\", \\"check\\": \\"0\\"}";$/;"	v
+LOGDIR	Conf.cpp	/^const char* LOGDIR     = "log-dir";$/;"	v
+MAXFILE	App.cpp	/^const  int  MAXFILE = 65535;$/;"	v
+MYSQL_SYS_STR	Nodes.cpp	/^const string  MYSQL_SYS_STR = "SELECT SUBSYSTEM_CODE,SERVER_IP,SERVER_PORT FROM TBL_RESMANAGE_SUBSYSTEMINFO WHERE SUBSYSTEM_CODE != 13 AND SUBSYSTEM_CODE != 11 ";$/;"	v
+Mod1_Service	Iscs.cpp	/^int  Mod1_Service()$/;"	f
+Mod2_Service	Iscs.cpp	/^int  Mod2_Service()$/;"	f
+ModBus_Deal	Iscs.cpp	/^void  ModBus_Deal()$/;"	f
+ModSelect	Iscs.cpp	/^void  MyModBus::ModSelect()$/;"	f	class:MyModBus
+MyConf	Conf.cpp	/^MyConf::MyConf(const string& conffile)$/;"	f	class:MyConf
+MyDataSql	DataSql.cpp	/^MyDataSql::MyDataSql()$/;"	f	class:MyDataSql
+MyIscs	Iscs.cpp	/^MyIscs::MyIscs(std::string sql1, std::string sql2)$/;"	f	class:MyIscs
+MyModBus	Iscs.cpp	/^MyModBus::MyModBus(const std::string ip, const int port, const int slave)$/;"	f	class:MyModBus
+MyNodes	Nodes.cpp	/^MyNodes::MyNodes()$/;"	f	class:MyNodes
+MyNodes	Nodes.cpp	/^MyNodes::MyNodes(const MyNodes&)$/;"	f	class:MyNodes
+MyNodes	Nodes.cpp	/^MyNodes::MyNodes(std::string sql)$/;"	f	class:MyNodes
+MySnmp	RecvSnmp.cpp	/^MySnmp::MySnmp()$/;"	f	class:MySnmp
+MySocket	Socket.cpp	/^MySocket::MySocket(std::string ip, int port):_ip{ip}, _port{port}$/;"	f	class:MySocket
+NB_CONNECTION	Iscs.cpp	/^const int      NB_CONNECTION = 5;$/;"	v
+NORTHIP	Conf.cpp	/^const char* NORTHIP    = "north-ip";$/;"	v
+NORTHPORT	Conf.cpp	/^const char* NORTHPORT  = "north-port";$/;"	v
+Node	Node.cpp	/^Node::Node(const uint8_t& ssys, const uint8_t& stop, const std::string& ip, const uint16_t& port, const bool& flag, const int& timeout)$/;"	f	class:Node
+PASSWORD	Conf.cpp	/^const char* PASSWORD   = "password";$/;"	v
+PORTSUB	Nodes.cpp	/^static const int   PORTSUB = 2;$/;"	v	file:
+PUBPORT	Conf.cpp	/^const char* PUBPORT    = "pub-port";$/;"	v
+RecvData	UdpDeal.cpp	/^void RecvData(MySocket& socket)$/;"	f
+RecvPubData	Song.cpp	/^void  RecvPubData()$/;"	f
+ResetNode	Node.cpp	/^void  Node::ResetNode(int timeout)$/;"	f	class:Node
+SNMP_JSON_STR	TrapCallBack.cpp	/^const  string  SNMP_JSON_STR  = "{ type: \\"65406\\", fnum: \\"0\\", flen: \\"26\\", son_sys: \\"%d\\", stop: \\"%d\\", eng: \\"%s\\", node:\\"%s\\", bug: \\"%d\\", time: \\"%s\\", res1: \\"0\\", res2: \\"0\\", res3: \\"0\\", check: \\"0\\"}";$/;"	v
+SOUNDIP	Conf.cpp	/^const char* SOUNDIP    = "sound-ip";$/;"	v
+SOUNDPORT	Conf.cpp	/^const char* SOUNDPORT  = "sound-port";$/;"	v
+SOUTHIP	Conf.cpp	/^const char* SOUTHIP    = "south-min-ip";$/;"	v
+SOUTHIPM	Conf.cpp	/^const char* SOUTHIPM   = "south-major-ip";$/;"	v
+SOUTHPORT	Conf.cpp	/^const char* SOUTHPORT  = "south-min-port";$/;"	v
+SOUTHPORTM	Conf.cpp	/^const char* SOUTHPORTM = "south-major-port";$/;"	v
+SYSSUB	Nodes.cpp	/^static const int   SYSSUB = 0;$/;"	v	file:
+SetMapVal	Iscs.cpp	/^void  MyModBus::SetMapVal(int pos, int val)$/;"	f	class:MyModBus
+Show	Nodes.cpp	/^void MyNodes::Show()$/;"	f	class:MyNodes
+Sig_light	Song.cpp	/^void Sig_light(const int& rgb, const int& flag)$/;"	f
+Song	Song.cpp	/^int Song()$/;"	f
+Song	Song.cpp	/^void Song(const int& fatal_l, const int& fatal_s, const int& serious_l, const int& serious_s, const int& common_l, const int& common_s)$/;"	f
+Timeout	UdpDeal.cpp	/^bool Timeout(MySocket& socket)$/;"	f
+TrapCallBack	TrapCallBack.cpp	/^void   TrapCallBack(int reason, Snmp_pp::Snmp *snmp, Snmp_pp::Pdu &pdu, Snmp_pp::SnmpTarget &target, void *cd)$/;"	f
+UPDATEPORT	Conf.cpp	/^const char* UPDATEPORT = "update-port";$/;"	v
+USERNAME	Conf.cpp	/^const char* USERNAME   = "username";$/;"	v
+UT_INPUT_REGISTERS_ADDRESS	Iscs.cpp	/^const uint16_t UT_INPUT_REGISTERS_ADDRESS = 0x01;$/;"	v
+UT_INPUT_REGISTERS_NB	Iscs.cpp	/^const uint16_t UT_INPUT_REGISTERS_NB = 100;$/;"	v
+UdpDeal	UdpDeal.cpp	/^int  UdpDeal()$/;"	f
+UpdateNodes	Nodes.cpp	/^void MyNodes::UpdateNodes(int sockfd)$/;"	f	class:MyNodes
+WAR_JSON_STR	UdpDeal.cpp	/^const char* WAR_JSON_STR = "{ \\"type\\": \\"%d\\", \\"fnum\\": \\"%d\\", \\"flen\\": \\"%d\\", \\"son_sys\\": \\"%d\\", \\"stop\\": \\"%d\\", \\"eng\\": \\"%d\\", \\"node\\":\\"%d\\", \\"bug\\": \\"%d\\", \\"time\\": \\"%02d%02d-%02d-%02d %02d:%02d:%02d\\", \\"res1\\": \\"%d\\", \\"res2\\": \\"%d\\", \\"res3\\": \\"%d\\", \\"check\\": \\"%d\\"}";$/;"	v
+WDeComp	UdpDeal.cpp	/^std::string  WDeComp(const std::string data, std::string& result)$/;"	f
+WEBPORT	Conf.cpp	/^const char* WEBPORT    = "web-port";$/;"	v
+ZXCODE	Conf.cpp	/^const string ZXCODE = "\/usr\/local\/warning\/etc\/zxcode";$/;"	v
+codemap	hwzx.cpp	/^map<string, int> codemap = {$/;"	v
+comp_commit	Conf.cpp	/^int MyConf::comp_commit(const string commit)$/;"	f	class:MyConf
+comp_dir	Conf.cpp	/^int MyConf::comp_dir(const string dir)$/;"	f	class:MyConf
+comp_keepalive	Conf.cpp	/^int MyConf::comp_keepalive(const int keepalive)$/;"	f	class:MyConf
+comp_sport	Conf.cpp	/^int MyConf::comp_sport(const int sport)$/;"	f	class:MyConf
+comp_trap_port	Conf.cpp	/^int MyConf::comp_trap_port(const int trap_port)$/;"	f	class:MyConf
+comp_update_ip	Conf.cpp	/^int MyConf::comp_update_ip(const string ip)$/;"	f	class:MyConf
+comp_update_port	Conf.cpp	/^int MyConf::comp_update_port(const int update_port)$/;"	f	class:MyConf
+comp_web_ip	Conf.cpp	/^int MyConf::comp_web_ip(const string ip)$/;"	f	class:MyConf
+comp_web_port	Conf.cpp	/^int MyConf::comp_web_port(const int web_port)$/;"	f	class:MyConf
+dameno	App.cpp	/^void dameno()$/;"	f
+getInstance	Conf.cpp	/^MyConf* MyConf::getInstance()$/;"	f	class:MyConf
+getInstance	Nodes.cpp	/^MyNodes* MyNodes::getInstance()$/;"	f	class:MyNodes
+get_commit	Conf.cpp	/^string  MyConf::get_commit()$/;"	f	class:MyConf
+get_data	Socket.cpp	/^bool MySocket::get_data(struct sockaddr_in& sin, std::string& data)$/;"	f	class:MySocket
+get_database	Conf.cpp	/^string  MyConf::get_database()$/;"	f	class:MyConf
+get_dir	Conf.cpp	/^string MyConf::get_dir()$/;"	f	class:MyConf
+get_ip	Socket.cpp	/^std::string MySocket::get_ip()$/;"	f	class:MySocket
+get_ip_bus	Conf.cpp	/^map<string, int>  MyConf::get_ip_bus()$/;"	f	class:MyConf
+get_keepalive	Conf.cpp	/^int MyConf::get_keepalive()$/;"	f	class:MyConf
+get_modbus_major_ip	Conf.cpp	/^string MyConf::get_modbus_major_ip()$/;"	f	class:MyConf
+get_modbus_major_port	Conf.cpp	/^int  MyConf::get_modbus_major_port()$/;"	f	class:MyConf
+get_modbus_min_ip	Conf.cpp	/^string MyConf::get_modbus_min_ip()$/;"	f	class:MyConf
+get_modbus_min_port	Conf.cpp	/^int  MyConf::get_modbus_min_port()$/;"	f	class:MyConf
+get_mysql_ip	Conf.cpp	/^string MyConf::get_mysql_ip()$/;"	f	class:MyConf
+get_password	Conf.cpp	/^string  MyConf::get_password()$/;"	f	class:MyConf
+get_port	Socket.cpp	/^int  MySocket::get_port()$/;"	f	class:MySocket
+get_pub_port	Conf.cpp	/^int MyConf::get_pub_port()$/;"	f	class:MyConf
+get_sip	Conf.cpp	/^string MyConf::get_sip()$/;"	f	class:MyConf
+get_sockfd	Socket.cpp	/^int  MySocket::get_sockfd()$/;"	f	class:MySocket
+get_sound_ip	Conf.cpp	/^string MyConf::get_sound_ip()$/;"	f	class:MyConf
+get_sound_port	Conf.cpp	/^int MyConf::get_sound_port()$/;"	f	class:MyConf
+get_sport	Conf.cpp	/^int MyConf::get_sport()$/;"	f	class:MyConf
+get_trap_port	Conf.cpp	/^int  MyConf::get_trap_port()$/;"	f	class:MyConf
+get_update_ip	Conf.cpp	/^string MyConf::get_update_ip()$/;"	f	class:MyConf
+get_update_port	Conf.cpp	/^int MyConf::get_update_port()$/;"	f	class:MyConf
+get_username	Conf.cpp	/^string  MyConf::get_username()$/;"	f	class:MyConf
+get_web_ip	Conf.cpp	/^string MyConf::get_web_ip()$/;"	f	class:MyConf
+get_web_port	Conf.cpp	/^int MyConf::get_web_port()$/;"	f	class:MyConf
+get_zx_code	Conf.cpp	/^map<string, int>  MyConf::get_zx_code()$/;"	f	class:MyConf
+hwGetData	hwzx.cpp	/^bool  hwGetData(Pdu& pdu, int& son_sys, int& bus, string& jk, string& cw, int& code, string& atime)$/;"	f
+ipmap	hwzx.cpp	/^map<string, int> ipmap = {$/;"	v
+iscs_1	Iscs.cpp	/^static  const std::string  iscs_1 = "SELECT subsys_.SUBSYSTEM_CODE, IFNULL(sub_.QTY,0) qty FROM TBL_RESMANAGE_SUBSYSTEMINFO subsys_ LEFT JOIN (SELECT b.SUBSYSTEM_CODE,COUNT(*) QTY FROM TBL_ALARM_ALARMINFO a LEFT JOIN TBL_RESMANAGE_SUBSYSTEMINFO b ON a.SUBSYSTEMID=b.SUBSYSTEMID WHERE a.ALARM_STATE=0 AND a.FAULTID!=\\"\\" AND a.FAULTUNITID!=\\"\\" AND a.SUBSYSTEMID!=\\"\\" AND a.STATIONID!=\\"\\"  GROUP BY a.SUBSYSTEMID  LIMIT  8) sub_ ON subsys_.SUBSYSTEM_CODE=sub_.SUBSYSTEM_CODE LIMIT 9;";$/;"	v	file:
+iscs_2	Iscs.cpp	/^static const  std::string  iscs_2  =  "SELECT        station.STATION_NAME,   IFNULL(q.QTY,0) qty  FROM TBL_RESMANAGE_STATIONINFO station LEFT JOIN(SELECT IFNULL(count(*),0) QTY,alarm.STATIONID FROM TBL_ALARM_ALARMINFO  alarm, TBL_RESMANAGE_FAULTINFO  fault ,TBL_RESMANAGE_SUBSYSTEMINFO system  WHERE alarm.FAULTID=fault.FAULTID AND fault.FAULT_CODE=4226 AND alarm.SUBSYSTEMID=system.SUBSYSTEMID AND system.SUBSYSTEM_CODE=8 AND alarm.ALARM_STATE!=2 GROUP BY  STATIONID) q ON station.STATIONID=q.STATIONID WHERE STATION_ORDER_NO <> 97 AND STATION_ORDER_NO <> 98 AND STATION_ORDER_NO <> 99 ORDER BY station.STATION_ORDER_NO asc  LIMIT 34";$/;"	v	file:
+main	App.cpp	/^int main(int argc, char**argv)$/;"	f
+nRecvBuf	Socket.cpp	/^static const int nRecvBuf = 1024;       \/\/设置成5M$/;"	v	file:
+nSendBuf	Socket.cpp	/^static const int nSendBuf = 1024;$/;"	v	file:
+operator <<	Conf.cpp	/^ostream &operator<<(ostream &out, const MyConf *myconf)$/;"	f
+operator <<	Node.cpp	/^std::ostream &operator<<(std::ostream &out, Node node)$/;"	f
+operator =	Node.cpp	/^Node& Node::operator=(Node node)$/;"	f	class:Node
+operator ==	Node.cpp	/^bool operator == (Node node1, Node node2)$/;"	f
+push_data	Socket.cpp	/^void MySocket::push_data(struct sockaddr_in& sin, std::string& data)$/;"	f	class:MySocket
+read_write_udp	Song.cpp	/^int  read_write_udp(const uint8_t* data, int len){$/;"	f
+set_commit	Conf.cpp	/^int MyConf::set_commit(const string commit)$/;"	f	class:MyConf
+set_database	Conf.cpp	/^int  MyConf::set_database(const string database)$/;"	f	class:MyConf
+set_dir	Conf.cpp	/^int MyConf::set_dir(const string dir)$/;"	f	class:MyConf
+set_ip_bus	Conf.cpp	/^int  MyConf::set_ip_bus() $/;"	f	class:MyConf
+set_keepalive	Conf.cpp	/^int MyConf::set_keepalive(const int keepalive)$/;"	f	class:MyConf
+set_modbus_major_ip	Conf.cpp	/^int  MyConf::set_modbus_major_ip(const string modbus_ip)$/;"	f	class:MyConf
+set_modbus_major_port	Conf.cpp	/^int  MyConf::set_modbus_major_port(const int modbus_port)$/;"	f	class:MyConf
+set_modbus_min_ip	Conf.cpp	/^int  MyConf::set_modbus_min_ip(const string modbus_ip)$/;"	f	class:MyConf
+set_modbus_min_port	Conf.cpp	/^int  MyConf::set_modbus_min_port(const int modbus_port)$/;"	f	class:MyConf
+set_mysql_ip	Conf.cpp	/^int  MyConf::set_mysql_ip(const string mysql_ip)$/;"	f	class:MyConf
+set_password	Conf.cpp	/^int  MyConf::set_password(const string password)$/;"	f	class:MyConf
+set_pub_port	Conf.cpp	/^int MyConf::set_pub_port(const int pub_port)$/;"	f	class:MyConf
+set_sip	Conf.cpp	/^int MyConf::set_sip(const string ip)$/;"	f	class:MyConf
+set_sound_ip	Conf.cpp	/^int MyConf::set_sound_ip(const string sound_ip)$/;"	f	class:MyConf
+set_sound_port	Conf.cpp	/^int MyConf::set_sound_port(const int sound_port)$/;"	f	class:MyConf
+set_sport	Conf.cpp	/^int MyConf::set_sport(const int sport)$/;"	f	class:MyConf
+set_trap_port	Conf.cpp	/^int MyConf::set_trap_port(const int trap_port)$/;"	f	class:MyConf
+set_update_ip	Conf.cpp	/^int MyConf::set_update_ip(const string ip)$/;"	f	class:MyConf
+set_update_port	Conf.cpp	/^int MyConf::set_update_port(const int update_port)$/;"	f	class:MyConf
+set_username	Conf.cpp	/^int  MyConf::set_username(const string username)$/;"	f	class:MyConf
+set_web_ip	Conf.cpp	/^int MyConf::set_web_ip(const string ip)$/;"	f	class:MyConf
+set_web_port	Conf.cpp	/^int MyConf::set_web_port(const int web_port)$/;"	f	class:MyConf
+set_zx_code	Conf.cpp	/^int MyConf::set_zx_code()$/;"	f	class:MyConf
+slqueue	Song.cpp	/^static  MyQueue<std::pair<int, int>> slqueue;$/;"	v	file:
+zte_7_cs_ip	hwzx.cpp	/^static  const string  zte_7_cs_ip =  "10.71.14.12";$/;"	v	file:
+zte_g_cs_ip	hwzx.cpp	/^static  const string  zte_g_cs_ip =  "10.71.14.11";$/;"	v	file:
+zte_gw_ip	hwzx.cpp	/^static  const string  zte_gw_ip   =  "10.71.20.129";$/;"	v	file:
+zxGetData	hwzx.cpp	/^bool  zxGetData(Pdu& pdu, int& son_sys, int& bus, string& jk, string& cw, int& code, string& atime)$/;"	f
+~MyConf	Conf.cpp	/^MyConf::~MyConf()$/;"	f	class:MyConf
+~MyDataSql	DataSql.cpp	/^MyDataSql::~MyDataSql()$/;"	f	class:MyDataSql
+~MyModBus	Iscs.cpp	/^MyModBus::~MyModBus()$/;"	f	class:MyModBus
+~MyNodes	Nodes.cpp	/^MyNodes::~MyNodes()$/;"	f	class:MyNodes
+~MySnmp	RecvSnmp.cpp	/^MySnmp::~MySnmp()$/;"	f	class:MySnmp
+~MySocket	Socket.cpp	/^MySocket::~MySocket()$/;"	f	class:MySocket

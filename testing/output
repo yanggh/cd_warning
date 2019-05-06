@@ -1,0 +1,1122 @@
+In file included from /usr/include/c++/4.8/tuple:35:0,
+                 from /usr/local/include/gtest/internal/gtest-port.h:275,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:40,
+                 from /usr/local/include/gtest/gtest.h:60,
+                 from gtest_test.cpp:1:
+/usr/include/c++/4.8/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+In file included from /usr/local/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/local/include/gtest/gtest.h:60,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-port.h:879:12: error: ‘std::get’ has not been declared
+ using std::get;
+            ^
+/usr/local/include/gtest/internal/gtest-port.h:880:12: error: ‘std::make_tuple’ has not been declared
+ using std::make_tuple;
+            ^
+/usr/local/include/gtest/internal/gtest-port.h:881:12: error: ‘std::tuple’ has not been declared
+ using std::tuple;
+            ^
+/usr/local/include/gtest/internal/gtest-port.h:882:12: error: ‘std::tuple_element’ has not been declared
+ using std::tuple_element;
+            ^
+/usr/local/include/gtest/internal/gtest-port.h:883:12: error: ‘std::tuple_size’ has not been declared
+ using std::tuple_size;
+            ^
+/usr/local/include/gtest/internal/gtest-port.h: In function ‘void testing::internal::FlushInfoLog()’:
+/usr/local/include/gtest/internal/gtest-port.h:1132:37: error: ‘nullptr’ was not declared in this scope
+ inline void FlushInfoLog() { fflush(nullptr); }
+                                     ^
+/usr/local/include/gtest/internal/gtest-port.h: In function ‘To testing::internal::DownCast_(From*)’:
+/usr/local/include/gtest/internal/gtest-port.h:1255:17: error: ‘nullptr’ was not declared in this scope
+   const To to = nullptr;
+                 ^
+/usr/local/include/gtest/internal/gtest-port.h:1261:3: error: ‘nullptr’ was not declared in this scope
+   GTEST_CHECK_(f == nullptr || dynamic_cast<To>(f) != nullptr);
+   ^
+/usr/local/include/gtest/internal/gtest-port.h: In function ‘void testing::internal::SleepMilliseconds(int)’:
+/usr/local/include/gtest/internal/gtest-port.h:1333:20: error: ‘nullptr’ was not declared in this scope
+   nanosleep(&time, nullptr);
+                    ^
+/usr/local/include/gtest/internal/gtest-port.h: In constructor ‘testing::internal::Notification::Notification()’:
+/usr/local/include/gtest/internal/gtest-port.h:1351:5: error: ‘nullptr’ was not declared in this scope
+     GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, nullptr));
+     ^
+/usr/local/include/gtest/internal/gtest-port.h: In function ‘void* testing::internal::ThreadFuncWithCLinkage(void*)’:
+/usr/local/include/gtest/internal/gtest-port.h:1460:10: error: ‘nullptr’ was not declared in this scope
+   return nullptr;
+          ^
+/usr/local/include/gtest/internal/gtest-port.h: In constructor ‘testing::internal::ThreadWithParam<T>::ThreadWithParam(void (*)(T), T, testing::internal::Notification*)’:
+/usr/local/include/gtest/internal/gtest-port.h:1488:5: error: ‘nullptr’ was not declared in this scope
+     GTEST_CHECK_POSIX_SUCCESS_(
+     ^
+/usr/local/include/gtest/internal/gtest-port.h: In member function ‘void testing::internal::ThreadWithParam<T>::Join()’:
+/usr/local/include/gtest/internal/gtest-port.h:1495:7: error: ‘nullptr’ was not declared in this scope
+       GTEST_CHECK_POSIX_SUCCESS_(pthread_join(thread_, nullptr));
+       ^
+/usr/local/include/gtest/internal/gtest-port.h: In member function ‘virtual void testing::internal::ThreadWithParam<T>::Run()’:
+/usr/local/include/gtest/internal/gtest-port.h:1501:30: error: ‘nullptr’ was not declared in this scope
+     if (thread_can_start_ != nullptr) thread_can_start_->WaitForNotification();
+                              ^
+/usr/local/include/gtest/internal/gtest-port.h: In constructor ‘testing::internal::Mutex::Mutex()’:
+/usr/local/include/gtest/internal/gtest-port.h:1864:5: error: ‘nullptr’ was not declared in this scope
+     GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, nullptr));
+     ^
+/usr/local/include/gtest/internal/gtest-port.h: At global scope:
+/usr/local/include/gtest/internal/gtest-port.h:2006:3: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+   std::unique_ptr<ValueHolderFactory> default_factory_;
+   ^
+/usr/local/include/gtest/internal/gtest-port.h: In constructor ‘testing::internal::ThreadLocal<T>::ThreadLocal()’:
+/usr/local/include/gtest/internal/gtest-port.h:1917:28: error: class ‘testing::internal::ThreadLocal<T>’ does not have any field named ‘default_factory_’
+       : key_(CreateKey()), default_factory_(new DefaultValueHolderFactory()) {}
+                            ^
+/usr/local/include/gtest/internal/gtest-port.h: In constructor ‘testing::internal::ThreadLocal<T>::ThreadLocal(const T&)’:
+/usr/local/include/gtest/internal/gtest-port.h:1920:9: error: class ‘testing::internal::ThreadLocal<T>’ does not have any field named ‘default_factory_’
+         default_factory_(new InstanceValueHolderFactory(value)) {}
+         ^
+/usr/local/include/gtest/internal/gtest-port.h: In member function ‘T* testing::internal::ThreadLocal<T>::GetOrCreateValue() const’:
+/usr/local/include/gtest/internal/gtest-port.h:1962:19: error: ‘nullptr’ was not declared in this scope
+     if (holder != nullptr) {
+                   ^
+/usr/local/include/gtest/internal/gtest-port.h:1966:37: error: ‘default_factory_’ was not declared in this scope
+     ValueHolder* const new_holder = default_factory_->MakeNewHolder();
+                                     ^
+/usr/local/include/gtest/internal/gtest-port.h: At global scope:
+/usr/local/include/gtest/internal/gtest-port.h:2303:1: error: expected unqualified-id before ‘[’ token
+ [[noreturn]] inline void Abort() { abort(); }
+ ^
+In file included from /usr/local/include/gtest/internal/gtest-internal.h:63:0,
+                 from /usr/local/include/gtest/gtest.h:60,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/gtest-message.h:228:9: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+   const std::unique_ptr< ::std::stringstream> ss_;
+         ^
+/usr/local/include/gtest/gtest-message.h: In copy constructor ‘testing::Message::Message(const testing::Message&)’:
+/usr/local/include/gtest/gtest-message.h:101:33: error: class ‘testing::Message’ does not have any field named ‘ss_’
+   Message(const Message& msg) : ss_(new ::std::stringstream) {  // NOLINT
+                                 ^
+/usr/local/include/gtest/gtest-message.h:102:6: error: ‘ss_’ was not declared in this scope
+     *ss_ << msg.GetString();
+      ^
+/usr/local/include/gtest/gtest-message.h: In constructor ‘testing::Message::Message(const char*)’:
+/usr/local/include/gtest/gtest-message.h:106:39: error: class ‘testing::Message’ does not have any field named ‘ss_’
+   explicit Message(const char* str) : ss_(new ::std::stringstream) {
+                                       ^
+/usr/local/include/gtest/gtest-message.h:107:6: error: ‘ss_’ was not declared in this scope
+     *ss_ << str;
+      ^
+/usr/local/include/gtest/gtest-message.h: In member function ‘testing::Message& testing::Message::operator<<(const T&)’:
+/usr/local/include/gtest/gtest-message.h:136:6: error: ‘ss_’ was not declared in this scope
+     *ss_ << val;
+      ^
+/usr/local/include/gtest/gtest-message.h: In member function ‘testing::Message& testing::Message::operator<<(T* const&)’:
+/usr/local/include/gtest/gtest-message.h:155:20: error: ‘nullptr’ was not declared in this scope
+     if (pointer == nullptr) {
+                    ^
+/usr/local/include/gtest/gtest-message.h:156:8: error: ‘ss_’ was not declared in this scope
+       *ss_ << "(null)";
+        ^
+/usr/local/include/gtest/gtest-message.h:158:8: error: ‘ss_’ was not declared in this scope
+       *ss_ << pointer;
+        ^
+/usr/local/include/gtest/gtest-message.h: In member function ‘testing::Message& testing::Message::operator<<(testing::Message::BasicNarrowIoManip)’:
+/usr/local/include/gtest/gtest-message.h:171:6: error: ‘ss_’ was not declared in this scope
+     *ss_ << val;
+      ^
+In file included from /usr/local/include/gtest/internal/gtest-internal.h:66:0,
+                 from /usr/local/include/gtest/gtest.h:60,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-type-util.h: In function ‘std::string testing::internal::GetTypeName()’:
+/usr/local/include/gtest/internal/gtest-type-util.h:92:52: error: ‘nullptr’ was not declared in this scope
+   char* const readable_name = __cxa_demangle(name, nullptr, nullptr, &status);
+                                                    ^
+In file included from /usr/local/include/gtest/gtest.h:60:0,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-internal.h: In member function ‘bool testing::internal::TypedTestCasePState::AddTestName(const char*, int, const char*, const char*)’:
+/usr/local/include/gtest/internal/gtest-internal.h:554:7: error: ‘Abort’ is not a member of ‘testing::internal::posix’
+       posix::Abort();
+       ^
+/usr/local/include/gtest/internal/gtest-internal.h: In function ‘const char* testing::internal::SkipComma(const char*)’:
+/usr/local/include/gtest/internal/gtest-internal.h:590:16: error: ‘nullptr’ was not declared in this scope
+   if (comma == nullptr) {
+                ^
+/usr/local/include/gtest/internal/gtest-internal.h: In function ‘std::string testing::internal::GetPrefixUntilComma(const char*)’:
+/usr/local/include/gtest/internal/gtest-internal.h:601:19: error: ‘nullptr’ was not declared in this scope
+   return comma == nullptr ? str : std::string(str, comma);
+                   ^
+/usr/local/include/gtest/internal/gtest-internal.h: In static member function ‘static bool testing::internal::TypeParameterizedTest<Fixture, TestSel, Types>::Register(const char*, const testing::internal::CodeLocation&, const char*, const char*, int, const std::vector<std::basic_string<char> >&)’:
+/usr/local/include/gtest/internal/gtest-internal.h:670:9: error: ‘nullptr’ was not declared in this scope
+         nullptr,  // No value parameter.
+         ^
+/usr/local/include/gtest/internal/gtest-internal.h: In static member function ‘static bool testing::internal::TypeParameterizedTestCase<Fixture, Tests, Types>::Register(const char*, testing::internal::CodeLocation, const testing::internal::TypedTestCasePState*, const char*, const char*, const std::vector<std::basic_string<char> >&)’:
+/usr/local/include/gtest/internal/gtest-internal.h:718:7: error: ‘Abort’ is not a member of ‘testing::internal::posix’
+       posix::Abort();
+       ^
+/usr/local/include/gtest/internal/gtest-internal.h: At global scope:
+/usr/local/include/gtest/internal/gtest-internal.h:936:28: error: expected type-specifier before ‘decltype’
+           class Iterator = decltype(::std::declval<const C&>().begin()),
+                            ^
+/usr/local/include/gtest/internal/gtest-internal.h:936:28: error: expected ‘>’ before ‘decltype’
+/usr/local/include/gtest/internal/gtest-internal.h:941:44: error: default template arguments may not be used in function templates without -std=c++11 or -std=gnu++11
+ IsContainer IsContainerTest(int /* dummy */) {
+                                            ^
+/usr/local/include/gtest/internal/gtest-internal.h:964:44: error: ‘nullptr’ was not declared in this scope
+   static const bool value = sizeof(test<T>(nullptr, nullptr)) == sizeof(int);
+                                            ^
+/usr/local/include/gtest/internal/gtest-internal.h:964:53: error: ‘nullptr’ was not declared in this scope
+   static const bool value = sizeof(test<T>(nullptr, nullptr)) == sizeof(int);
+                                                     ^
+/usr/local/include/gtest/internal/gtest-internal.h:1172:9: error: expected nested-name-specifier before ‘type’
+   using type = IndexSequence;
+         ^
+/usr/local/include/gtest/internal/gtest-internal.h:1172:9: error: using-declaration for non-member at class scope
+/usr/local/include/gtest/internal/gtest-internal.h:1172:14: error: expected ‘;’ before ‘=’ token
+   using type = IndexSequence;
+              ^
+/usr/local/include/gtest/internal/gtest-internal.h:1172:14: error: expected unqualified-id before ‘=’ token
+/usr/local/include/gtest/internal/gtest-internal.h:1180:9: error: expected nested-name-specifier before ‘type’
+   using type = IndexSequence<I..., (sizeofT + I)..., 2 * sizeofT>;
+         ^
+/usr/local/include/gtest/internal/gtest-internal.h:1180:9: error: using-declaration for non-member at class scope
+/usr/local/include/gtest/internal/gtest-internal.h:1180:14: error: expected ‘;’ before ‘=’ token
+   using type = IndexSequence<I..., (sizeofT + I)..., 2 * sizeofT>;
+              ^
+/usr/local/include/gtest/internal/gtest-internal.h:1180:14: error: expected unqualified-id before ‘=’ token
+/usr/local/include/gtest/internal/gtest-internal.h:1184:9: error: expected nested-name-specifier before ‘type’
+   using type = IndexSequence<I..., (sizeofT + I)...>;
+         ^
+/usr/local/include/gtest/internal/gtest-internal.h:1184:9: error: using-declaration for non-member at class scope
+/usr/local/include/gtest/internal/gtest-internal.h:1184:14: error: expected ‘;’ before ‘=’ token
+   using type = IndexSequence<I..., (sizeofT + I)...>;
+              ^
+/usr/local/include/gtest/internal/gtest-internal.h:1184:14: error: expected unqualified-id before ‘=’ token
+/usr/local/include/gtest/internal/gtest-internal.h:1205:9: error: expected nested-name-specifier before ‘type’
+   using type = T;
+         ^
+/usr/local/include/gtest/internal/gtest-internal.h:1205:9: error: using-declaration for non-member at class scope
+/usr/local/include/gtest/internal/gtest-internal.h:1205:14: error: expected ‘;’ before ‘=’ token
+   using type = T;
+              ^
+/usr/local/include/gtest/internal/gtest-internal.h:1205:14: error: expected unqualified-id before ‘=’ token
+/usr/local/include/gtest/internal/gtest-internal.h:1225:9: error: expected nested-name-specifier before ‘value_type’
+   using value_type =
+         ^
+/usr/local/include/gtest/internal/gtest-internal.h:1225:9: error: using-declaration for non-member at class scope
+/usr/local/include/gtest/internal/gtest-internal.h:1225:20: error: expected ‘;’ before ‘=’ token
+   using value_type =
+                    ^
+/usr/local/include/gtest/internal/gtest-internal.h:1225:20: error: expected unqualified-id before ‘=’ token
+/usr/local/include/gtest/internal/gtest-internal.h:1229:41: error: expected ‘)’ before ‘t’
+   explicit FlatTupleElemBase(value_type t) : value(std::move(t)) {}
+                                         ^
+/usr/local/include/gtest/internal/gtest-internal.h:1230:3: error: ‘value_type’ does not name a type
+   value_type value;
+   ^
+/usr/local/include/gtest/internal/gtest-internal.h:1237:59: error: ‘>>’ should be ‘> >’ within a nested template argument list
+ struct FlatTupleBase<FlatTuple<T...>, IndexSequence<Idx...>>
+                                                           ^
+/usr/local/include/gtest/internal/gtest-internal.h:1239:9: error: expected nested-name-specifier before ‘Indices’
+   using Indices = IndexSequence<Idx...>;
+         ^
+/usr/local/include/gtest/internal/gtest-internal.h:1239:9: error: using-declaration for non-member at class scope
+/usr/local/include/gtest/internal/gtest-internal.h:1239:17: error: expected ‘;’ before ‘=’ token
+   using Indices = IndexSequence<Idx...>;
+                 ^
+/usr/local/include/gtest/internal/gtest-internal.h:1239:17: error: expected unqualified-id before ‘=’ token
+/usr/local/include/gtest/internal/gtest-internal.h: In constructor ‘testing::internal::FlatTupleBase<testing::internal::FlatTuple<T ...>, testing::internal::IndexSequence<I ...> >::FlatTupleBase(T ...)’:
+/usr/local/include/gtest/internal/gtest-internal.h:1242:49: error: ‘move’ is not a member of ‘std’
+       : FlatTupleElemBase<FlatTuple<T...>, Idx>(std::move(t))... {}
+                                                 ^
+/usr/local/include/gtest/internal/gtest-internal.h: At global scope:
+/usr/local/include/gtest/internal/gtest-internal.h:1258:9: error: expected nested-name-specifier before ‘Indices’
+   using Indices = typename FlatTuple::FlatTupleBase::Indices;
+         ^
+/usr/local/include/gtest/internal/gtest-internal.h:1258:9: error: using-declaration for non-member at class scope
+/usr/local/include/gtest/internal/gtest-internal.h:1258:17: error: expected ‘;’ before ‘=’ token
+   using Indices = typename FlatTuple::FlatTupleBase::Indices;
+                 ^
+/usr/local/include/gtest/internal/gtest-internal.h:1258:17: error: expected unqualified-id before ‘=’ token
+/usr/local/include/gtest/internal/gtest-internal.h:1265:34: error: ‘Indices’ was not declared in this scope
+   const typename ElemFromList<I, Indices, T...>::type& Get() const {
+                                  ^
+/usr/local/include/gtest/internal/gtest-internal.h:1265:47: error: template argument 2 is invalid
+   const typename ElemFromList<I, Indices, T...>::type& Get() const {
+                                               ^
+/usr/local/include/gtest/internal/gtest-internal.h:1270:28: error: ‘Indices’ was not declared in this scope
+   typename ElemFromList<I, Indices, T...>::type& Get() {
+                            ^
+/usr/local/include/gtest/internal/gtest-internal.h:1270:41: error: template argument 2 is invalid
+   typename ElemFromList<I, Indices, T...>::type& Get() {
+                                         ^
+/usr/local/include/gtest/internal/gtest-internal.h: In constructor ‘testing::internal::FlatTuple<T>::FlatTuple(T ...)’:
+/usr/local/include/gtest/internal/gtest-internal.h:1262:57: error: ‘move’ is not a member of ‘std’
+   explicit FlatTuple(T... t) : FlatTuple::FlatTupleBase(std::move(t)...) {}
+                                                         ^
+In file included from /usr/local/include/gtest/internal/gtest-param-util.h:49:0,
+                 from /usr/local/include/gtest/gtest-param-test.h:188,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/gtest-printers.h: In function ‘void testing::internal::DefaultPrintTo(testing::internal::WrapPrinterType<(testing::internal::DefaultPrinterType)1u>, T*, std::ostream*)’:
+/usr/local/include/gtest/gtest-printers.h:450:12: error: ‘nullptr’ was not declared in this scope
+   if (p == nullptr) {
+            ^
+/usr/local/include/gtest/gtest-printers.h: In function ‘void testing::internal::DefaultPrintTo(testing::internal::WrapPrinterType<(testing::internal::DefaultPrinterType)2u>, T*, std::ostream*)’:
+/usr/local/include/gtest/gtest-printers.h:462:12: error: ‘nullptr’ was not declared in this scope
+   if (p == nullptr) {
+            ^
+/usr/local/include/gtest/gtest-printers.h: In function ‘void testing::internal::PrintTo(const T&, std::ostream*)’:
+/usr/local/include/gtest/gtest-printers.h:519:19: error: ‘is_function’ is not a member of ‘std’
+                 : std::is_function<typename std::remove_pointer<T>::type>::value
+                   ^
+/usr/local/include/gtest/gtest-printers.h:519:50: error: ‘remove_pointer’ in namespace ‘std’ does not name a type
+                 : std::is_function<typename std::remove_pointer<T>::type>::value
+                                                  ^
+/usr/local/include/gtest/gtest-printers.h:519:64: error: expected ‘(’ before ‘<’ token
+                 : std::is_function<typename std::remove_pointer<T>::type>::value
+                                                                ^
+/usr/local/include/gtest/gtest-printers.h:519:66: error: expected primary-expression before ‘>’ token
+                 : std::is_function<typename std::remove_pointer<T>::type>::value
+                                                                  ^
+/usr/local/include/gtest/gtest-printers.h:519:69: error: ‘testing::internal::WrapPrinterType<sizeof (IsContainerTest<T>)(0) == sizeof (int) && !(testing::internal::IsRecursiveContainer<T>::value) ? testing::internal::DefaultPrinterType::kPrintContainer !(testing::internal::is_pointer<T>::value) ? testing::internal::DefaultPrinterType::kPrintOther  <erroneous-expression> >::type’ is not a type
+                 : std::is_function<typename std::remove_pointer<T>::type>::value
+                                                                     ^
+/usr/local/include/gtest/gtest-printers.h:519:73: error: expected ‘(’ before ‘>’ token
+                 : std::is_function<typename std::remove_pointer<T>::type>::value
+                                                                         ^
+/usr/local/include/gtest/gtest-printers.h:519:74: error: ‘::value’ has not been declared
+                 : std::is_function<typename std::remove_pointer<T>::type>::value
+                                                                          ^
+/usr/local/include/gtest/gtest-printers.h:521:42: error: expected primary-expression before ‘)’ token
+                       : kPrintPointer > (),
+                                          ^
+/usr/local/include/gtest/gtest-printers.h: At global scope:
+/usr/local/include/gtest/gtest-printers.h:636:26: error: variable or field ‘PrintTo’ declared void
+ inline void PrintTo(std::nullptr_t, ::std::ostream* os) { *os << "(nullptr)"; }
+                          ^
+/usr/local/include/gtest/gtest-printers.h:636:21: error: ‘nullptr_t’ is not a member of ‘std’
+ inline void PrintTo(std::nullptr_t, ::std::ostream* os) { *os << "(nullptr)"; }
+                     ^
+/usr/local/include/gtest/gtest-printers.h:636:51: error: expected primary-expression before ‘*’ token
+ inline void PrintTo(std::nullptr_t, ::std::ostream* os) { *os << "(nullptr)"; }
+                                                   ^
+/usr/local/include/gtest/gtest-printers.h:636:53: error: ‘os’ was not declared in this scope
+ inline void PrintTo(std::nullptr_t, ::std::ostream* os) { *os << "(nullptr)"; }
+                                                     ^
+/usr/local/include/gtest/gtest-printers.h:639:19: error: variable or field ‘PrintTo’ declared void
+ void PrintTo(std::reference_wrapper<T> ref, ::std::ostream* os) {
+                   ^
+/usr/local/include/gtest/gtest-printers.h:639:14: error: ‘reference_wrapper’ is not a member of ‘std’
+ void PrintTo(std::reference_wrapper<T> ref, ::std::ostream* os) {
+              ^
+/usr/local/include/gtest/gtest-printers.h:639:38: error: expected primary-expression before ‘>’ token
+ void PrintTo(std::reference_wrapper<T> ref, ::std::ostream* os) {
+                                      ^
+/usr/local/include/gtest/gtest-printers.h:639:40: error: ‘ref’ was not declared in this scope
+ void PrintTo(std::reference_wrapper<T> ref, ::std::ostream* os) {
+                                        ^
+/usr/local/include/gtest/gtest-printers.h:639:59: error: expected primary-expression before ‘*’ token
+ void PrintTo(std::reference_wrapper<T> ref, ::std::ostream* os) {
+                                                           ^
+/usr/local/include/gtest/gtest-printers.h:639:61: error: ‘os’ was not declared in this scope
+ void PrintTo(std::reference_wrapper<T> ref, ::std::ostream* os) {
+                                                             ^
+/usr/local/include/gtest/gtest-printers.h:647:34: error: ‘std::integral_constant’ has not been declared
+ void PrintTupleTo(const T&, std::integral_constant<size_t, 0>,
+                                  ^
+/usr/local/include/gtest/gtest-printers.h:647:51: error: expected ‘,’ or ‘...’ before ‘<’ token
+ void PrintTupleTo(const T&, std::integral_constant<size_t, 0>,
+                                                   ^
+/usr/local/include/gtest/gtest-printers.h:651:36: error: ‘std::integral_constant’ has not been declared
+ void PrintTupleTo(const T& t, std::integral_constant<size_t, I>,
+                                    ^
+/usr/local/include/gtest/gtest-printers.h:651:53: error: expected ‘,’ or ‘...’ before ‘<’ token
+ void PrintTupleTo(const T& t, std::integral_constant<size_t, I>,
+                                                     ^
+/usr/local/include/gtest/gtest-printers.h: In function ‘void testing::internal::PrintTupleTo(const T&, int)’:
+/usr/local/include/gtest/gtest-printers.h:653:19: error: ‘integral_constant’ is not a member of ‘std’
+   PrintTupleTo(t, std::integral_constant<size_t, I - 1>(), os);
+                   ^
+/usr/local/include/gtest/gtest-printers.h:653:48: error: expected primary-expression before ‘,’ token
+   PrintTupleTo(t, std::integral_constant<size_t, I - 1>(), os);
+                                                ^
+/usr/local/include/gtest/gtest-printers.h:653:57: error: expected primary-expression before ‘)’ token
+   PrintTupleTo(t, std::integral_constant<size_t, I - 1>(), os);
+                                                         ^
+/usr/local/include/gtest/gtest-printers.h:653:60: error: ‘os’ was not declared in this scope
+   PrintTupleTo(t, std::integral_constant<size_t, I - 1>(), os);
+                                                            ^
+/usr/local/include/gtest/gtest-printers.h:659:34: error: ‘tuple_element’ in namespace ‘std’ does not name a type
+   UniversalPrinter<typename std::tuple_element<I - 1, T>::type>::Print(
+                                  ^
+/usr/local/include/gtest/gtest-printers.h:659:47: error: expected template-argument before ‘<’ token
+   UniversalPrinter<typename std::tuple_element<I - 1, T>::type>::Print(
+                                               ^
+/usr/local/include/gtest/gtest-printers.h:659:47: error: expected ‘>’ before ‘<’ token
+/usr/local/include/gtest/gtest-printers.h:659:63: error: template argument 1 is invalid
+   UniversalPrinter<typename std::tuple_element<I - 1, T>::type>::Print(
+                                                               ^
+/usr/local/include/gtest/gtest-printers.h:659:71: error: invalid type in declaration before ‘(’ token
+   UniversalPrinter<typename std::tuple_element<I - 1, T>::type>::Print(
+                                                                       ^
+/usr/local/include/gtest/gtest-printers.h:660:7: error: ‘get’ is not a member of ‘std’
+       std::get<I - 1>(t), os);
+       ^
+/usr/local/include/gtest/gtest-printers.h:660:29: error: expression list treated as compound expression in initializer [-fpermissive]
+       std::get<I - 1>(t), os);
+                             ^
+/usr/local/include/gtest/gtest-printers.h: At global scope:
+/usr/local/include/gtest/gtest-printers.h:664:20: error: ‘tuple’ in namespace ‘std’ does not name a type
+ void PrintTo(const ::std::tuple<Types...>& t, ::std::ostream* os) {
+                    ^
+/usr/local/include/gtest/gtest-printers.h:664:32: error: expected ‘,’ or ‘...’ before ‘<’ token
+ void PrintTo(const ::std::tuple<Types...>& t, ::std::ostream* os) {
+                                ^
+/usr/local/include/gtest/gtest-printers.h: In function ‘void testing::internal::PrintTo(int)’:
+/usr/local/include/gtest/gtest-printers.h:665:4: error: ‘os’ was not declared in this scope
+   *os << "(";
+    ^
+/usr/local/include/gtest/gtest-printers.h:666:16: error: ‘t’ was not declared in this scope
+   PrintTupleTo(t, std::integral_constant<size_t, sizeof...(Types)>(), os);
+                ^
+/usr/local/include/gtest/gtest-printers.h:666:19: error: ‘integral_constant’ is not a member of ‘std’
+   PrintTupleTo(t, std::integral_constant<size_t, sizeof...(Types)>(), os);
+                   ^
+/usr/local/include/gtest/gtest-printers.h:666:48: error: expected primary-expression before ‘,’ token
+   PrintTupleTo(t, std::integral_constant<size_t, sizeof...(Types)>(), os);
+                                                ^
+/usr/local/include/gtest/gtest-printers.h:666:68: error: expected primary-expression before ‘)’ token
+   PrintTupleTo(t, std::integral_constant<size_t, sizeof...(Types)>(), os);
+                                                                    ^
+/usr/local/include/gtest/gtest-printers.h: In static member function ‘static void testing::internal::UniversalTersePrinter<const char*>::Print(const char*, std::ostream*)’:
+/usr/local/include/gtest/gtest-printers.h:843:16: error: ‘nullptr’ was not declared in this scope
+     if (str == nullptr) {
+                ^
+/usr/local/include/gtest/gtest-printers.h: In static member function ‘static void testing::internal::UniversalTersePrinter<const wchar_t*>::Print(const wchar_t*, std::ostream*)’:
+/usr/local/include/gtest/gtest-printers.h:863:16: error: ‘nullptr’ was not declared in this scope
+     if (str == nullptr) {
+                ^
+/usr/local/include/gtest/gtest-printers.h: At global scope:
+/usr/local/include/gtest/gtest-printers.h:902:51: error: ‘std::integral_constant’ has not been declared
+ void TersePrintPrefixToStrings(const Tuple&, std::integral_constant<size_t, 0>,
+                                                   ^
+/usr/local/include/gtest/gtest-printers.h:902:68: error: expected ‘,’ or ‘...’ before ‘<’ token
+ void TersePrintPrefixToStrings(const Tuple&, std::integral_constant<size_t, 0>,
+                                                                    ^
+/usr/local/include/gtest/gtest-printers.h:906:37: error: ‘std::integral_constant’ has not been declared
+                                std::integral_constant<size_t, I>,
+                                     ^
+/usr/local/include/gtest/gtest-printers.h:906:54: error: expected ‘,’ or ‘...’ before ‘<’ token
+                                std::integral_constant<size_t, I>,
+                                                      ^
+/usr/local/include/gtest/gtest-printers.h: In function ‘void testing::internal::TersePrintPrefixToStrings(const Tuple&, int)’:
+/usr/local/include/gtest/gtest-printers.h:908:32: error: ‘integral_constant’ is not a member of ‘std’
+   TersePrintPrefixToStrings(t, std::integral_constant<size_t, I - 1>(),
+                                ^
+/usr/local/include/gtest/gtest-printers.h:908:61: error: expected primary-expression before ‘,’ token
+   TersePrintPrefixToStrings(t, std::integral_constant<size_t, I - 1>(),
+                                                             ^
+/usr/local/include/gtest/gtest-printers.h:908:70: error: expected primary-expression before ‘)’ token
+   TersePrintPrefixToStrings(t, std::integral_constant<size_t, I - 1>(),
+                                                                      ^
+/usr/local/include/gtest/gtest-printers.h:909:29: error: ‘strings’ was not declared in this scope
+                             strings);
+                             ^
+/usr/local/include/gtest/gtest-printers.h:911:23: error: ‘get’ is not a member of ‘std’
+   UniversalTersePrint(std::get<I - 1>(t), &ss);
+                       ^
+/usr/local/include/gtest/gtest-printers.h: In function ‘testing::internal::Strings testing::internal::UniversalTersePrintTupleFieldsToStrings(const Tuple&)’:
+/usr/local/include/gtest/gtest-printers.h:922:14: error: ‘integral_constant’ is not a member of ‘std’
+       value, std::integral_constant<size_t, std::tuple_size<Tuple>::value>(),
+              ^
+/usr/local/include/gtest/gtest-printers.h:922:43: error: expected primary-expression before ‘,’ token
+       value, std::integral_constant<size_t, std::tuple_size<Tuple>::value>(),
+                                           ^
+/usr/local/include/gtest/gtest-printers.h:922:45: error: ‘tuple_size’ is not a member of ‘std’
+       value, std::integral_constant<size_t, std::tuple_size<Tuple>::value>(),
+                                             ^
+/usr/local/include/gtest/gtest-printers.h:922:66: error: expected primary-expression before ‘>’ token
+       value, std::integral_constant<size_t, std::tuple_size<Tuple>::value>(),
+                                                                  ^
+/usr/local/include/gtest/gtest-printers.h:922:67: error: ‘::value’ has not been declared
+       value, std::integral_constant<size_t, std::tuple_size<Tuple>::value>(),
+                                                                   ^
+/usr/local/include/gtest/gtest-printers.h:922:76: error: expected primary-expression before ‘)’ token
+       value, std::integral_constant<size_t, std::tuple_size<Tuple>::value>(),
+                                                                            ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h: At global scope:
+/usr/local/include/gtest/internal/gtest-param-util.h:157:3: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+   std::unique_ptr<ParamIteratorInterface<T> > impl_;
+   ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In copy constructor ‘testing::internal::ParamIterator<T>::ParamIterator(const testing::internal::ParamIterator<T>&)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:127:47: error: class ‘testing::internal::ParamIterator<T>’ does not have any field named ‘impl_’
+   ParamIterator(const ParamIterator& other) : impl_(other.impl_->Clone()) {}
+                                               ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘testing::internal::ParamIterator<T>& testing::internal::ParamIterator<T>::operator=(const testing::internal::ParamIterator<T>&)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:130:7: error: ‘impl_’ was not declared in this scope
+       impl_.reset(other.impl_->Clone());
+       ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘const T& testing::internal::ParamIterator<T>::operator*() const’:
+/usr/local/include/gtest/internal/gtest-param-util.h:134:40: error: ‘impl_’ was not declared in this scope
+   const T& operator*() const { return *impl_->Current(); }
+                                        ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘const T* testing::internal::ParamIterator<T>::operator->() const’:
+/usr/local/include/gtest/internal/gtest-param-util.h:135:40: error: ‘impl_’ was not declared in this scope
+   const T* operator->() const { return impl_->Current(); }
+                                        ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘testing::internal::ParamIterator<T>& testing::internal::ParamIterator<T>::operator++()’:
+/usr/local/include/gtest/internal/gtest-param-util.h:138:5: error: ‘impl_’ was not declared in this scope
+     impl_->Advance();
+     ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘testing::internal::ParamIterator<T> testing::internal::ParamIterator<T>::operator++(int)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:143:40: error: ‘impl_’ was not declared in this scope
+     ParamIteratorInterface<T>* clone = impl_->Clone();
+                                        ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘bool testing::internal::ParamIterator<T>::operator==(const testing::internal::ParamIterator<T>&) const’:
+/usr/local/include/gtest/internal/gtest-param-util.h:148:12: error: ‘impl_’ was not declared in this scope
+     return impl_.get() == other.impl_.get() || impl_->Equals(*other.impl_);
+            ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In constructor ‘testing::internal::ParamIterator<T>::ParamIterator(testing::internal::ParamIteratorInterface<T>*)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:156:61: error: class ‘testing::internal::ParamIterator<T>’ does not have any field named ‘impl_’
+   explicit ParamIterator(ParamIteratorInterface<T>* impl) : impl_(impl) {}
+                                                             ^
+/usr/local/include/gtest/internal/gtest-param-util.h: At global scope:
+/usr/local/include/gtest/internal/gtest-param-util.h:196:3: error: ‘shared_ptr’ in namespace ‘std’ does not name a type
+   std::shared_ptr<const ParamGeneratorInterface<T> > impl_;
+   ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In constructor ‘testing::internal::ParamGenerator< <template-parameter-1-1> >::ParamGenerator(testing::internal::ParamGeneratorInterface<T>*)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:184:63: error: class ‘testing::internal::ParamGenerator< <template-parameter-1-1> >’ does not have any field named ‘impl_’
+   explicit ParamGenerator(ParamGeneratorInterface<T>* impl) : impl_(impl) {}
+                                                               ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In copy constructor ‘testing::internal::ParamGenerator< <template-parameter-1-1> >::ParamGenerator(const testing::internal::ParamGenerator< <template-parameter-1-1> >&)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:185:49: error: class ‘testing::internal::ParamGenerator< <template-parameter-1-1> >’ does not have any field named ‘impl_’
+   ParamGenerator(const ParamGenerator& other) : impl_(other.impl_) {}
+                                                 ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘testing::internal::ParamGenerator< <template-parameter-1-1> >& testing::internal::ParamGenerator< <template-parameter-1-1> >::operator=(const testing::internal::ParamGenerator< <template-parameter-1-1> >&)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:188:5: error: ‘impl_’ was not declared in this scope
+     impl_ = other.impl_;
+     ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘testing::internal::ParamGenerator< <template-parameter-1-1> >::iterator testing::internal::ParamGenerator< <template-parameter-1-1> >::begin() const’:
+/usr/local/include/gtest/internal/gtest-param-util.h:192:44: error: ‘impl_’ was not declared in this scope
+   iterator begin() const { return iterator(impl_->Begin()); }
+                                            ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘testing::internal::ParamGenerator< <template-parameter-1-1> >::iterator testing::internal::ParamGenerator< <template-parameter-1-1> >::end() const’:
+/usr/local/include/gtest/internal/gtest-param-util.h:193:42: error: ‘impl_’ was not declared in this scope
+   iterator end() const { return iterator(impl_->End()); }
+                                          ^
+/usr/local/include/gtest/internal/gtest-param-util.h: At global scope:
+/usr/local/include/gtest/internal/gtest-param-util.h:359:13: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+     mutable std::unique_ptr<const T> value_;
+             ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘virtual void testing::internal::ValuesInIteratorRangeGenerator<T>::Iterator::Advance()’:
+/usr/local/include/gtest/internal/gtest-param-util.h:318:7: error: ‘value_’ was not declared in this scope
+       value_.reset();
+       ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘virtual const T* testing::internal::ValuesInIteratorRangeGenerator<T>::Iterator::Current() const’:
+/usr/local/include/gtest/internal/gtest-param-util.h:331:11: error: ‘value_’ was not declared in this scope
+       if (value_.get() == nullptr) value_.reset(new T(*iterator_));
+           ^
+/usr/local/include/gtest/internal/gtest-param-util.h:331:27: error: ‘nullptr’ was not declared in this scope
+       if (value_.get() == nullptr) value_.reset(new T(*iterator_));
+                           ^
+/usr/local/include/gtest/internal/gtest-param-util.h:332:14: error: ‘value_’ was not declared in this scope
+       return value_.get();
+              ^
+/usr/local/include/gtest/internal/gtest-param-util.h: At global scope:
+/usr/local/include/gtest/internal/gtest-param-util.h:605:11: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+     const std::unique_ptr<TestMetaFactoryBase<ParamType> > test_meta_factory;
+           ^
+/usr/local/include/gtest/internal/gtest-param-util.h:607:9: error: expected nested-name-specifier before ‘TestInfoContainer’
+   using TestInfoContainer = ::std::vector<std::shared_ptr<TestInfo> >;
+         ^
+/usr/local/include/gtest/internal/gtest-param-util.h:607:9: error: using-declaration for non-member at class scope
+/usr/local/include/gtest/internal/gtest-param-util.h:607:27: error: expected ‘;’ before ‘=’ token
+   using TestInfoContainer = ::std::vector<std::shared_ptr<TestInfo> >;
+                           ^
+/usr/local/include/gtest/internal/gtest-param-util.h:607:27: error: expected unqualified-id before ‘=’ token
+/usr/local/include/gtest/internal/gtest-param-util.h:647:3: error: ‘TestInfoContainer’ does not name a type
+   TestInfoContainer tests_;
+   ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘void testing::internal::ParameterizedTestCaseInfo<TestCase>::AddTestPattern(const char*, const char*, testing::internal::TestMetaFactoryBase<typename TestCase::ParamType>*)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:522:5: error: ‘tests_’ was not declared in this scope
+     tests_.push_back(std::shared_ptr<TestInfo>(
+     ^
+/usr/local/include/gtest/internal/gtest-param-util.h:522:22: error: ‘shared_ptr’ is not a member of ‘std’
+     tests_.push_back(std::shared_ptr<TestInfo>(
+                      ^
+/usr/local/include/gtest/internal/gtest-param-util.h:522:46: error: expected primary-expression before ‘>’ token
+     tests_.push_back(std::shared_ptr<TestInfo>(
+                                              ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘virtual void testing::internal::ParameterizedTestCaseInfo<TestCase>::RegisterTests()’:
+/usr/local/include/gtest/internal/gtest-param-util.h:541:36: error: invalid type in declaration before ‘::’ token
+     for (typename TestInfoContainer::iterator test_it = tests_.begin();
+                                    ^
+/usr/local/include/gtest/internal/gtest-param-util.h:541:36: error: expected ‘;’ before ‘::’ token
+/usr/local/include/gtest/internal/gtest-param-util.h:541:36: error: ‘::iterator’ has not been declared
+/usr/local/include/gtest/internal/gtest-param-util.h:541:36: note: suggested alternatives:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/4.8/memory:62,
+                 from /usr/local/include/gtest/gtest.h:56,
+                 from gtest_test.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:118:12: note:   ‘std::iterator’
+     struct iterator
+            ^
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:118:12: note:   ‘std::iterator’
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:541:47: error: expected ‘;’ before ‘test_it’
+     for (typename TestInfoContainer::iterator test_it = tests_.begin();
+                                               ^
+/usr/local/include/gtest/internal/gtest-param-util.h:541:47: error: ‘test_it’ was not declared in this scope
+/usr/local/include/gtest/internal/gtest-param-util.h:541:57: error: ‘tests_’ was not declared in this scope
+     for (typename TestInfoContainer::iterator test_it = tests_.begin();
+                                                         ^
+/usr/local/include/gtest/internal/gtest-param-util.h:541:71: error: expected ‘)’ before ‘;’ token
+     for (typename TestInfoContainer::iterator test_it = tests_.begin();
+                                                                       ^
+/usr/local/include/gtest/internal/gtest-param-util.h:542:10: error: ‘test_it’ was not declared in this scope
+          test_it != tests_.end(); ++test_it) {
+          ^
+/usr/local/include/gtest/internal/gtest-param-util.h:542:21: error: ‘tests_’ was not declared in this scope
+          test_it != tests_.end(); ++test_it) {
+                     ^
+/usr/local/include/gtest/internal/gtest-param-util.h:542:44: error: expected ‘;’ before ‘)’ token
+          test_it != tests_.end(); ++test_it) {
+                                            ^
+/usr/local/include/gtest/internal/gtest-param-util.h:590:3: error: expected ‘}’ at end of input
+   }  // RegisterTests
+   ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In constructor ‘testing::internal::ParameterizedTestCaseInfo<TestCase>::TestInfo::TestInfo(const char*, const char*, testing::internal::TestMetaFactoryBase<typename TestCase::ParamType>*)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:601:9: error: class ‘testing::internal::ParameterizedTestCaseInfo<TestCase>::TestInfo’ does not have any field named ‘test_meta_factory’
+         test_meta_factory(a_test_meta_factory) {}
+         ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In member function ‘testing::internal::ParameterizedTestCaseInfo<TestCase>* testing::internal::ParameterizedTestCaseRegistry::GetTestCasePatternHolder(const char*, testing::internal::CodeLocation)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:675:60: error: ‘nullptr’ was not declared in this scope
+     ParameterizedTestCaseInfo<TestCase>* typed_test_info = nullptr;
+                                                            ^
+/usr/local/include/gtest/internal/gtest-param-util.h:684:11: error: ‘Abort’ is not a member of ‘testing::internal::posix’
+           posix::Abort();
+           ^
+/usr/local/include/gtest/internal/gtest-param-util.h: In constructor ‘testing::internal::ValueArray<Ts>::ValueArray(Ts ...)’:
+/usr/local/include/gtest/internal/gtest-param-util.h:731:28: error: ‘move’ is not a member of ‘std’
+   ValueArray(Ts... v) : v_{std::move(v)...} {}
+                            ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h: At global scope:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:67:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2> > {
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:67:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:67:58: error: wrong number of template arguments (2, should be 1)
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2> > {
+                                                          ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:67:60: error: expected ‘{’ before ‘>’ token
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2> > {
+                                                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:67:60: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:182:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3> > {
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:182:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:182:62: error: wrong number of template arguments (3, should be 1)
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3> > {
+                                                              ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:182:64: error: expected ‘{’ before ‘>’ token
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3> > {
+                                                                ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:182:64: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:314:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4> > {
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:314:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:314:66: error: wrong number of template arguments (4, should be 1)
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4> > {
+                                                                  ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:314:68: error: expected ‘{’ before ‘>’ token
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4> > {
+                                                                    ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:314:68: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:465:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5> > {
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:465:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:465:70: error: wrong number of template arguments (5, should be 1)
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5> > {
+                                                                      ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:465:72: error: expected ‘{’ before ‘>’ token
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5> > {
+                                                                        ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:465:72: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:633:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5, T6> > {
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:633:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:633:74: error: wrong number of template arguments (6, should be 1)
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5, T6> > {
+                                                                          ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:633:76: error: expected ‘{’ before ‘>’ token
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5, T6> > {
+                                                                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:633:76: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:818:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5, T6,
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:818:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:819:11: error: wrong number of template arguments (7, should be 1)
+         T7> > {
+           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:819:13: error: expected ‘{’ before ‘>’ token
+         T7> > {
+             ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:819:13: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1021:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5, T6, T7,
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1021:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1022:11: error: wrong number of template arguments (8, should be 1)
+         T8> > {
+           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1022:13: error: expected ‘{’ before ‘>’ token
+         T8> > {
+             ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1022:13: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1243:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5, T6, T7,
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1243:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1244:15: error: wrong number of template arguments (9, should be 1)
+         T8, T9> > {
+               ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1244:17: error: expected ‘{’ before ‘>’ token
+         T8, T9> > {
+                 ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1244:17: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1482:39: error: ‘tuple’ is not a member of ‘std’
+     : public ParamGeneratorInterface< ::std::tuple<T1, T2, T3, T4, T5, T6, T7,
+                                       ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1482:39: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1483:20: error: wrong number of template arguments (10, should be 1)
+         T8, T9, T10> > {
+                    ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:84:27: error: provided for ‘template<class> class testing::internal::ParamGeneratorInterface’
+ template <typename> class ParamGeneratorInterface;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1483:22: error: expected ‘{’ before ‘>’ token
+         T8, T9, T10> > {
+                      ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1483:22: error: expected unqualified-id before ‘>’ token
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1747:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2> >() const {
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1747:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1747:47: error: wrong number of template arguments (2, should be 1)
+   operator ParamGenerator< ::std::tuple<T1, T2> >() const {
+                                               ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1747:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2> >() const {
+   ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1769:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2, T3> >() const {
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1769:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1769:51: error: wrong number of template arguments (3, should be 1)
+   operator ParamGenerator< ::std::tuple<T1, T2, T3> >() const {
+                                                   ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1769:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2, T3> >() const {
+   ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1794:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4> >() const {
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1794:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1794:55: error: wrong number of template arguments (4, should be 1)
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4> >() const {
+                                                       ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1794:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4> >() const {
+   ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1821:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5> >() const {
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1821:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1821:59: error: wrong number of template arguments (5, should be 1)
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5> >() const {
+                                                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1821:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5> >() const {
+   ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1852:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6> >() const {
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1852:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1852:63: error: wrong number of template arguments (6, should be 1)
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6> >() const {
+                                                               ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1852:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6> >() const {
+   ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1885:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7> >() const {
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1885:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1885:67: error: wrong number of template arguments (7, should be 1)
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7> >() const {
+                                                                   ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1885:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7> >() const {
+   ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1922:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7,
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1922:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1923:9: error: wrong number of template arguments (8, should be 1)
+       T8> >() const {
+         ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1922:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7,
+   ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1963:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7, T8,
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1963:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1964:9: error: wrong number of template arguments (9, should be 1)
+       T9> >() const {
+         ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:1963:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7, T8,
+   ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:2006:28: error: ‘tuple’ is not a member of ‘std’
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9,
+                            ^
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:2006:28: error: ‘tuple’ is not a member of ‘std’
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:2007:10: error: wrong number of template arguments (10, should be 1)
+       T10> >() const {
+          ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h:85:27: error: provided for ‘template<class> class testing::internal::ParamGenerator’
+ template <typename> class ParamGenerator;
+                           ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:189:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util-generated.h:2006:3: error: ‘<expression error>’ does not name a type
+   operator ParamGenerator< ::std::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9,
+   ^
+In file included from /usr/local/include/gtest/gtest.h:64:0,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/gtest-param-test.h: In function ‘testing::internal::ValueArray<T ...> testing::Values(T ...)’:
+/usr/local/include/gtest/gtest-param-test.h:342:37: error: ‘move’ is not a member of ‘std’
+   return internal::ValueArray<T...>(std::move(v)...);
+                                     ^
+In file included from /usr/local/include/gtest/gtest.h:60:0,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-internal.h: In instantiation of ‘struct testing::internal::MakeIndexSequence<1ul>’:
+/usr/local/include/gtest/internal/gtest-internal.h:1190:8:   required from ‘struct testing::internal::MakeIndexSequence<2ul>’
+/usr/local/include/gtest/internal/gtest-internal.h:1255:7:   required from ‘class testing::internal::FlatTuple<bool, bool>’
+/usr/local/include/gtest/internal/gtest-param-util.h:744:20:   required from ‘class testing::internal::ValueArray<bool, bool>’
+/usr/local/include/gtest/gtest-param-test.h:366:28:   required from here
+/usr/local/include/gtest/internal/gtest-internal.h:1190:8: error: no type named ‘type’ in ‘struct testing::internal::MakeIndexSequence<0ul>’
+ struct MakeIndexSequence
+        ^
+/usr/local/include/gtest/internal/gtest-internal.h: In instantiation of ‘struct testing::internal::MakeIndexSequence<2ul>’:
+/usr/local/include/gtest/internal/gtest-internal.h:1255:7:   required from ‘class testing::internal::FlatTuple<bool, bool>’
+/usr/local/include/gtest/internal/gtest-param-util.h:744:20:   required from ‘class testing::internal::ValueArray<bool, bool>’
+/usr/local/include/gtest/gtest-param-test.h:366:28:   required from here
+/usr/local/include/gtest/internal/gtest-internal.h:1190:8: error: no type named ‘type’ in ‘struct testing::internal::MakeIndexSequence<1ul>’
+/usr/local/include/gtest/internal/gtest-internal.h: In instantiation of ‘class testing::internal::FlatTuple<bool, bool>’:
+/usr/local/include/gtest/internal/gtest-param-util.h:744:20:   required from ‘class testing::internal::ValueArray<bool, bool>’
+/usr/local/include/gtest/gtest-param-test.h:366:28:   required from here
+/usr/local/include/gtest/internal/gtest-internal.h:1255:7: error: no type named ‘type’ in ‘struct testing::internal::MakeIndexSequence<2ul>’
+ class FlatTuple
+       ^
+In file included from /usr/local/include/gtest/gtest.h:67:0,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/gtest-test-part.h: In constructor ‘testing::TestPartResult::TestPartResult(testing::TestPartResult::Type, const char*, int, const char*)’:
+/usr/local/include/gtest/gtest-test-part.h:66:35: error: ‘nullptr’ was not declared in this scope
+         file_name_(a_file_name == nullptr ? "" : a_file_name),
+                                   ^
+/usr/local/include/gtest/gtest-test-part.h: In member function ‘const char* testing::TestPartResult::file_name() const’:
+/usr/local/include/gtest/gtest-test-part.h:77:33: error: ‘nullptr’ was not declared in this scope
+     return file_name_.empty() ? nullptr : file_name_.c_str();
+                                 ^
+In file included from gtest_test.cpp:1:0:
+/usr/local/include/gtest/gtest.h: At global scope:
+/usr/local/include/gtest/gtest.h:365:3: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+   std::unique_ptr< ::std::string> message_;
+   ^
+/usr/local/include/gtest/gtest.h:305:9: error: ‘nullptr’ was not declared in this scope
+       = nullptr)
+         ^
+/usr/local/include/gtest/gtest.h: In member function ‘const char* testing::AssertionResult::message() const’:
+/usr/local/include/gtest/gtest.h:329:12: error: ‘message_’ was not declared in this scope
+     return message_.get() != nullptr ? message_->c_str() : "";
+            ^
+/usr/local/include/gtest/gtest.h:329:30: error: ‘nullptr’ was not declared in this scope
+     return message_.get() != nullptr ? message_->c_str() : "";
+                              ^
+/usr/local/include/gtest/gtest.h: In member function ‘void testing::AssertionResult::AppendMessage(const testing::Message&)’:
+/usr/local/include/gtest/gtest.h:352:9: error: ‘message_’ was not declared in this scope
+     if (message_.get() == nullptr) message_.reset(new ::std::string);
+         ^
+/usr/local/include/gtest/gtest.h:352:27: error: ‘nullptr’ was not declared in this scope
+     if (message_.get() == nullptr) message_.reset(new ::std::string);
+                           ^
+/usr/local/include/gtest/gtest.h:353:5: error: ‘message_’ was not declared in this scope
+     message_->append(a_message.GetString().c_str());
+     ^
+In file included from gtest_test.cpp:1:0:
+/usr/local/include/gtest/gtest.h: At global scope:
+/usr/local/include/gtest/gtest.h:497:9: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+   const std::unique_ptr<GTEST_FLAG_SAVER_> gtest_flag_saver_;
+         ^
+/usr/local/include/gtest/gtest.h: In member function ‘virtual testing::Test::Setup_should_be_spelled_SetUp* testing::Test::Setup()’:
+/usr/local/include/gtest/gtest.h:516:59: error: ‘nullptr’ was not declared in this scope
+   virtual Setup_should_be_spelled_SetUp* Setup() { return nullptr; }
+                                                           ^
+/usr/local/include/gtest/gtest.h: At global scope:
+/usr/local/include/gtest/gtest.h:800:9: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+   const std::unique_ptr<const ::std::string> type_param_;
+         ^
+/usr/local/include/gtest/gtest.h:803:9: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+   const std::unique_ptr<const ::std::string> value_param_;
+         ^
+/usr/local/include/gtest/gtest.h: In member function ‘const char* testing::TestInfo::type_param() const’:
+/usr/local/include/gtest/gtest.h:704:9: error: ‘type_param_’ was not declared in this scope
+     if (type_param_.get() != nullptr) return type_param_->c_str();
+         ^
+/usr/local/include/gtest/gtest.h:704:30: error: ‘nullptr’ was not declared in this scope
+     if (type_param_.get() != nullptr) return type_param_->c_str();
+                              ^
+/usr/local/include/gtest/gtest.h:705:12: error: ‘nullptr’ was not declared in this scope
+     return nullptr;
+            ^
+/usr/local/include/gtest/gtest.h: In member function ‘const char* testing::TestInfo::value_param() const’:
+/usr/local/include/gtest/gtest.h:711:9: error: ‘value_param_’ was not declared in this scope
+     if (value_param_.get() != nullptr) return value_param_->c_str();
+         ^
+/usr/local/include/gtest/gtest.h:711:31: error: ‘nullptr’ was not declared in this scope
+     if (value_param_.get() != nullptr) return value_param_->c_str();
+                               ^
+/usr/local/include/gtest/gtest.h:712:12: error: ‘nullptr’ was not declared in this scope
+     return nullptr;
+            ^
+/usr/local/include/gtest/gtest.h: At global scope:
+/usr/local/include/gtest/gtest.h:987:9: error: ‘unique_ptr’ in namespace ‘std’ does not name a type
+   const std::unique_ptr<const ::std::string> type_param_;
+         ^
+/usr/local/include/gtest/gtest.h: In member function ‘const char* testing::TestCase::type_param() const’:
+/usr/local/include/gtest/gtest.h:851:9: error: ‘type_param_’ was not declared in this scope
+     if (type_param_.get() != nullptr) return type_param_->c_str();
+         ^
+/usr/local/include/gtest/gtest.h:851:30: error: ‘nullptr’ was not declared in this scope
+     if (type_param_.get() != nullptr) return type_param_->c_str();
+                              ^
+/usr/local/include/gtest/gtest.h:852:12: error: ‘nullptr’ was not declared in this scope
+     return nullptr;
+            ^
+/usr/local/include/gtest/gtest.h: In member function ‘virtual testing::Environment::Setup_should_be_spelled_SetUp* testing::Environment::Setup()’:
+/usr/local/include/gtest/gtest.h:1039:59: error: ‘nullptr’ was not declared in this scope
+   virtual Setup_should_be_spelled_SetUp* Setup() { return nullptr; }
+                                                           ^
+/usr/local/include/gtest/gtest.h: At global scope:
+/usr/local/include/gtest/gtest.h:1529:58: error: ‘nullptr’ was not declared in this scope
+       typename EnableIf<!is_pointer<T2>::value>::type* = nullptr) {
+                                                          ^
+/usr/local/include/gtest/gtest.h: In static member function ‘static testing::AssertionResult testing::internal::EqHelper<true>::Compare(const char*, const char*, testing::internal::Secret*, T*)’:
+/usr/local/include/gtest/gtest.h:1548:72: error: ‘nullptr’ was not declared in this scope
+     return CmpHelperEQ(lhs_expression, rhs_expression, static_cast<T*>(nullptr),
+                                                                        ^
+In file included from /usr/local/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/local/include/gtest/gtest.h:60,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/gtest.h: In static member function ‘static const ParamType& testing::WithParamInterface<T>::GetParam()’:
+/usr/local/include/gtest/gtest.h:1829:5: error: ‘nullptr’ was not declared in this scope
+     GTEST_CHECK_(parameter_ != nullptr)
+     ^
+In file included from gtest_test.cpp:1:0:
+/usr/local/include/gtest/gtest.h: At global scope:
+/usr/local/include/gtest/gtest.h:1850:46: error: ‘nullptr’ was not declared in this scope
+ const T* WithParamInterface<T>::parameter_ = nullptr;
+                                              ^
+In file included from /usr/local/include/gtest/gtest.h:60:0,
+                 from gtest_test.cpp:1:
+gtest_test.cpp:4:1: error: ‘nullptr’ was not declared in this scope
+ TEST(fun, add)
+ ^
+gtest_test.cpp:4:1: error: ‘nullptr’ was not declared in this scope
+ TEST(fun, add)
+ ^
+In file included from /usr/local/include/gtest/gtest-param-test.h:188:0,
+                 from /usr/local/include/gtest/gtest.h:64,
+                 from gtest_test.cpp:1:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘testing::internal::ValueArray<Ts>::operator testing::internal::ParamGenerator<T>() const [with T = bool; Ts = {bool, bool}]’:
+/usr/local/include/gtest/gtest-param-test.h:366:28:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:735:31: error: no matching function for call to ‘testing::internal::ValueArray<bool, bool>::MakeVector(testing::internal::MakeIndexSequence<2ul>) const’
+     return ValuesIn(MakeVector<T>(MakeIndexSequence<sizeof...(Ts)>()));
+                               ^
+/usr/local/include/gtest/internal/gtest-param-util.h:735:31: note: candidate is:
+/usr/local/include/gtest/internal/gtest-param-util.h:740:18: note: template<class T, long unsigned int ...I> std::vector<T> testing::internal::ValueArray<Ts>::MakeVector(testing::internal::IndexSequence<I ...>) const [with T = T; long unsigned int ...I = {I ...}; Ts = {bool, bool}]
+   std::vector<T> MakeVector(IndexSequence<I...>) const {
+                  ^
+/usr/local/include/gtest/internal/gtest-param-util.h:740:18: note:   template argument deduction/substitution failed:
+/usr/local/include/gtest/internal/gtest-param-util.h:735:31: note:   ‘testing::internal::MakeIndexSequence<2ul>’ is not derived from ‘testing::internal::IndexSequence<I ...>’
+     return ValuesIn(MakeVector<T>(MakeIndexSequence<sizeof...(Ts)>()));
+                               ^
